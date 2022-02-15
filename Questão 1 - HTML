@@ -1,0 +1,28 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium" if:false={visible}>
+			<h1 class="slds-text-heading_large">
+				Questão 01
+			</h1>
+			<p>Cod: {cod1}</p>
+			<p>Nome: {name1}</p>
+			<p>Telefone: {phone1}</p>
+			<p>E-mail: {email1}</p>
+			<p>Status: {rating1}</p>
+		</div>
+
+		<div class="slds-m-around_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+				Questão 01
+			</h1>
+			<p>Cod: {cod2}</p>
+			<p>Nome: {name2}</p>
+			<p>Telefone: {phone2}</p>
+			<p>E-mail: {email2}</p>
+			<p>Status: {rating2}</p>
+		</div>
+
+		<lightning-button variant="brand" label="Clique aqui!" title="Primary action" onclick={trocarDiv}
+			class="slds-m-left_x-small"></lightning-button>
+	</lightning-card>
+</template>
