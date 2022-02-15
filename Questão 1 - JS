@@ -1,0 +1,26 @@
+import { LightningElement } from "lwc";
+
+
+export default class App extends LightningElement {
+ cod1 = "M-0001";
+ name1 = "Mia Colucci";
+ phone1 = "9 8888-8888";
+ email1 = "miacolucci@gmail.com";
+ rating1 = "Sem verificação";
+ cod2 = "A-0001";
+ name2 = "Anahi Portilla";
+ phone2 = "9 9999-9999";
+ email2 = "anahiportilla@gmail.com";
+ rating2 = "Verificado";
+
+ visible = false;
+
+  trocarDiv() {
+    if(this.visible == true){
+      this.visible = false; 
+   }
+    else{
+      this.visible = true;
+    }
+  }
+ }
